@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="300">
+  <title>Covered Call Opportunities — Adhoc Run</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #060b14; color: #e2e8f0; font-family: 'Segoe UI', Arial, sans-serif; }
+
+    /* ── Sticky top bar ── */
+    #topbar {
+      position: sticky; top: 0; z-index: 999;
+      background: #0f172a; border-bottom: 1px solid #1e293b;
+      padding: 10px 20px; display: flex; align-items: center;
+      justify-content: space-between; flex-wrap: wrap; gap: 8px;
+    }
+    #topbar-left  { display: flex; align-items: center; gap: 12px; }
+    #topbar-title { font-size: 14px; font-weight: 700; color: #f8fafc; }
+    #topbar-ts    { font-size: 12px; color: #64748b; }
+    #topbar-right { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #64748b; }
+    #countdown    { color: #38bdf8; font-weight: 600; min-width: 32px; text-align: right; }
+    .dot-live     { width: 7px; height: 7px; border-radius: 50%; background: #22c55e;
+                     animation: pulse 2s infinite; display: inline-block; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+    /* ── Mobile tweaks ── */
+    @media (max-width: 640px) {
+      #topbar { padding: 8px 12px; }
+      #topbar-title { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="topbar">
+  <div id="topbar-left">
+    <span>📊</span>
+    <span id="topbar-title">Covered Call Opportunities</span>
+    <span id="topbar-ts">Adhoc Run · 2026-07-11 14:11 ET</span>
+  </div>
+  <div id="topbar-right">
+    <a href="index.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">📊 Main Dashboard →</a><a href="signals.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">📈 Portfolio Signals →</a><a href="long-calls.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">🎰 Long Calls →</a>
+    <span class="dot-live"></span>
+    <span>Refreshes in</span>
+    <span id="countdown">300s</span>
+  </div>
+</div>
+
+
+    <div style="font-family:Arial,sans-serif;color:#e2e8f0;padding:16px 20px;max-width:1100px;margin:0 auto;">
+      <h1 style="color:#4ade80;font-size:22px;margin:8px 0 4px;">🎯 Covered Call Opportunities</h1>
+      <p style="color:#64748b;font-size:12px;margin:0 0 20px;">
+        Portfolio positions currently at BUY signal only · Best annualized yield per ticker · Updated 2026-07-11 14:11 ET
+      </p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px;">
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:10px;padding:12px 18px;">
+          <div style="color:#64748b;font-size:11px;">Candidates</div>
+          <div style="color:#f8fafc;font-size:20px;font-weight:800;">19</div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:10px;padding:12px 18px;">
+          <div style="color:#64748b;font-size:11px;">Avg annualized yield</div>
+          <div style="color:#facc15;font-size:20px;font-weight:800;">51.3%</div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:10px;padding:12px 18px;">
+          <div style="color:#64748b;font-size:11px;">Total premium (1 ctr. ea.)</div>
+          <div style="color:#22c55e;font-size:20px;font-weight:800;">$9,910</div>
+        </div>
+      </div>
+
+      <div style="background:#0b1220;border:1px solid #1e293b;border-radius:10px;padding:12px 16px;margin-bottom:24px;">
+        <div style="color:#94a3b8;font-size:11px;font-weight:700;margin-bottom:6px;">HOW TO PLAY COVERED CALLS</div>
+        <ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:12px;line-height:1.6;">
+          <li>You need 100 shares of the underlying per contract sold — this only applies to positions you already hold (or are opening).</li>
+          <li>Selling the call caps your upside at the strike — if the stock rips past it, you get called away and miss the rest of the move. That's the trade-off for the premium income.</li>
+          <li>Pick a strike you're genuinely OK selling at. If you'd be upset to lose the shares at that price, go further OTM even for less premium.</li>
+          <li>If the stock approaches the strike before expiry and you want to keep your shares, roll the call out (and often up) rather than letting it get exercised.</li>
+          <li>Check the ex-dividend date if the stock pays one — early assignment risk goes up right before it.</li>
+          <li>Annualized yield lets you compare across different expiries fairly; the raw "Yield (this exp.)" is what you actually collect if held to that expiry.</li>
+        </ul>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px;">
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">FSLY</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">164.24% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-08-07 · 27d · strike $20.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$238</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">12.15%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+2.1%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$17.21</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$279</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">TXN</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">116.19% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-07-31 · 20d · strike $315.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$1,983</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">6.37%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.1%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$291.63</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$2,337</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">DXCM</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">104.69% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-07-31 · 20d · strike $76.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$430</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">5.74%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.4%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$70.66</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$534</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">AMZN</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">65.09% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-07-31 · 20d · strike $250.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$875</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">3.57%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.9%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$236.59</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$1,341</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">SLV</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">63.93% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-07-31 · 20d · strike $54.5</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$189</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">3.5%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.0%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$52.06</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$244</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">ZM</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">63.64% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-07-31 · 20d · strike $91.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$313</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">3.49%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.4%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$86.63</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$437</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">GOOG</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">62.97% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-07-31 · 20d · strike $360.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$1,225</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">3.45%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.4%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$342.78</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$1,722</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">NVDA</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">52.34% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-07-31 · 20d · strike $215.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$605</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">2.87%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.9%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$204.91</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$1,009</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">NEE</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">39.84% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-07-31 · 20d · strike $89.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$192</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">2.18%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.2%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$86.04</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$296</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">AAPL</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">38.6% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-07-31 · 20d · strike $320.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$667</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">2.12%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.5%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$308.65</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$1,135</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">GILD</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">37.69% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-08-07 · 27d · strike $134.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$362</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">2.79%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+3.2%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$126.21</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$779</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">V</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">34.62% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-07-31 · 20d · strike $355.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$662</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">1.9%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.7%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$342.35</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$1,265</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">CVX</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">34.14% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-07-31 · 20d · strike $180.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$330</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">1.87%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+2.0%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$173.1</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$690</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">TFC</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">25.5% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-08-21 · 41d · strike $52.5</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$148</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">2.86%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.6%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$50.19</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$231</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">KO</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">24.92% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-07-31 · 20d · strike $85.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$114</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">1.37%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.8%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$82.35</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$265</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">SPY</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">12.93% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-08-07 · 27d · strike $763.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$722</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">0.96%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.1%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$747.73</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$1,527</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">VOO</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">11.4% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-08-07 · 27d · strike $702.5</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$585</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">0.84%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.2%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$688.01</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$1,449</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">VT</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">11.01% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-08-21 · 41d · strike $160.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$195</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">1.24%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+1.5%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$155.68</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$432</div>
+          </div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">O</div>
+            <div style="font-size:10px;color:#facc15;font-weight:700;white-space:nowrap;">10.55% ann.</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-08-21 · 41d · strike $65.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Premium (100sh)</div><div style="color:#22c55e;font-weight:700;">$75</div>
+            <div style="color:#94a3b8;">Yield (this exp.)</div><div style="color:#facc15;">1.18%</div>
+            <div style="color:#94a3b8;">OTM cushion</div><div style="color:#e2e8f0;">+2.7%</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$62.56</div>
+            <div style="color:#94a3b8;">Max profit</div><div style="color:#4ade80;font-weight:700;">$244</div>
+          </div>
+        </div></div>
+
+      <p style="color:#334155;font-size:11px;margin:16px 0 0;text-align:center;">
+        Not financial advice. Assignment can happen anytime before expiry, especially near ex-dividend dates.
+      </p>
+    </div>
+
+<script>
+  (function() {
+    var secs = 300;
+    var el   = document.getElementById('countdown');
+    var iv   = setInterval(function() {
+      secs--;
+      if (secs <= 0) { clearInterval(iv); location.reload(); return; }
+      el.textContent = secs > 60
+        ? Math.ceil(secs / 60) + 'm ' + (secs % 60) + 's'
+        : secs + 's';
+    }, 1000);
+  })();
+</script>
+</body></html>
