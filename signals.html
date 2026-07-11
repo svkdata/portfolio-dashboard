@@ -39,10 +39,10 @@
   <div id="topbar-left">
     <span>📊</span>
     <span id="topbar-title">Portfolio Signals</span>
-    <span id="topbar-ts">Adhoc Run · 2026-07-11 14:11 ET</span>
+    <span id="topbar-ts">Adhoc Run · 2026-07-11 14:37 ET</span>
   </div>
   <div id="topbar-right">
-    <a href="index.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">📊 Main Dashboard →</a><a href="long-calls.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">🎰 Long Calls →</a><a href="covered-calls.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">🎯 Covered Calls →</a>
+    <a href="index.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">📊 Main Dashboard →</a><a href="long-calls.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">🎰 Long Calls →</a><a href="covered-calls.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">🎯 Covered Calls →</a><a href="strategy-guide.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">📚 Strategy Guide →</a>
     <span class="dot-live"></span>
     <span>Refreshes in</span>
     <span id="countdown">300s</span>
@@ -52,7 +52,7 @@
 
     <div style="font-family:Arial,sans-serif;color:#e2e8f0;padding:16px 20px;max-width:1100px;margin:0 auto;">
       <h1 style="color:#38bdf8;font-size:22px;margin:8px 0 4px;">📈 Portfolio Signals</h1>
-      <p style="color:#64748b;font-size:12px;margin:0 0 20px;">Updated 2026-07-11 14:11 ET</p>
+      <p style="color:#64748b;font-size:12px;margin:0 0 20px;">Updated 2026-07-11 14:37 ET</p>
 
       <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px;">
         <div style="background:#111827;border:1px solid #1e293b;border-radius:10px;padding:12px 18px;">
@@ -70,12 +70,11 @@
       </div>
 
       <div style="background:#0f172a;border:1px solid #1e293b;border-left:3px solid #38bdf8;border-radius:8px;
-                  padding:14px 18px;margin-bottom:28px;font-size:12px;color:#94a3b8;line-height:1.8;">
-        <span style="color:#38bdf8;font-weight:700;">📌 How to read this:</span>
-        Signal = shortlist only. Act when 2 of 3 align — <span style="color:#f8fafc;">MACD bullish</span>,
-        <span style="color:#f8fafc;">RSI 40–65</span>, <span style="color:#f8fafc;">Volume &gt;1.2×</span>.
-        Prefer entries at RSI 40–58. Ignore a BUY if MACD is still bearish (oversold, not ready yet).
-        On SELL: stop adding immediately, and exit promptly if volume is above 2×.
+                  padding:14px 18px;margin-bottom:28px;font-size:12px;color:#94a3b8;">
+        <div style="color:#38bdf8;font-weight:700;margin-bottom:6px;">📌 How to read this</div>
+        <ul style="margin:0;padding-left:18px;line-height:1.7;">
+          <li>Signal = shortlist only, not an auto-trade. Act when 2 of 3 confirming factors align: MACD bullish, RSI 40–65, Volume &gt;1.2×.</li><li>Prefer entries at RSI 40–58 — that's room to run before overbought, not already extended.</li><li>Ignore a BUY if MACD is still bearish — that's oversold, not confirmed reversal yet.</li><li>On SELL: stop adding to the position immediately, and exit promptly if volume is above 2× average.</li><li>Strong BUY + 2 confirming factors = full position size. Moderate BUY + 1 factor = half size, add on next run's confirmation. Moderate BUY alone = watchlist only, don't enter yet.</li><li>Never average down into a SELL signal — the score doesn't care what price you originally paid.</li>
+        </ul>
       </div>
 
       
