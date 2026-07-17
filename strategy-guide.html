@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="refresh" content="300">
-  <title>Strategy Guide — Startup Run</title>
+  <title>Strategy Guide — Adhoc Run</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,10 +39,10 @@
   <div id="topbar-left">
     <span>📊</span>
     <span id="topbar-title">Strategy Guide</span>
-    <span id="topbar-ts">Startup Run · 2026-07-17 14:37 ET</span>
+    <span id="topbar-ts">Adhoc Run · 2026-07-17 14:49 ET</span>
   </div>
   <div id="topbar-right">
-    <a href="index.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">📊 Main Dashboard →</a><a href="signals.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">📈 Portfolio Signals →</a><a href="long-calls.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">🎰 Long Calls →</a><a href="covered-calls.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">🎯 Covered Calls →</a>
+    <a href="index.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">📊 Main Dashboard →</a><a href="signals.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">📈 Portfolio Signals →</a><a href="long-calls.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">🎰 Long Calls →</a><a href="covered-calls.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">🎯 Covered Calls →</a><a href="cash-secured-puts.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">🪙 Cash-Secured Puts →</a>
     <span class="dot-live"></span>
     <span>Refreshes in</span>
     <span id="countdown">300s</span>
@@ -53,13 +53,14 @@
     <div style="font-family:Arial,sans-serif;color:#e2e8f0;padding:16px 20px;max-width:1000px;margin:0 auto;">
       <h1 style="color:#f8fafc;font-size:22px;margin:8px 0 4px;">📚 Strategy Guide</h1>
       <p style="color:#64748b;font-size:12px;margin:0 0 24px;">
-        How to play the results on each tab, in one place · Updated 2026-07-17 14:37 ET
+        How to play the results on each tab, in one place · Updated 2026-07-17 14:49 ET
       </p>
 
       <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;">
         <a href="#signals" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:6px 12px;border-radius:6px;">📈 Portfolio Signals</a>
         <a href="#longcalls" style="color:#f97316;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #78350f;padding:6px 12px;border-radius:6px;">🎰 Long Calls</a>
         <a href="#coveredcalls" style="color:#4ade80;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #14532d;padding:6px 12px;border-radius:6px;">🎯 Covered Calls</a>
+        <a href="#cashsecuredputs" style="color:#facc15;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #713f12;padding:6px 12px;border-radius:6px;">🪙 Cash-Secured Puts</a>
         <a href="#sizing" style="color:#a78bfa;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #4c1d95;padding:6px 12px;border-radius:6px;">⚖️ Position Sizing</a>
       </div>
 
@@ -103,6 +104,14 @@
         </div>
       </div>
 
+      <div id="cashsecuredputs" style="margin-bottom:36px;">
+        <h2 style="color:#facc15;font-size:18px;margin:0 0 4px;">🪙 Cash-Secured Puts</h2>
+        <p style="color:#475569;font-size:12px;margin:0 0 12px;">cash-secured-puts.html — the on-ramp into covered calls when you don't have the 100 shares yet</p>
+        <div style="background:#0b1220;border:1px solid #1e293b;border-radius:10px;padding:14px 16px;">
+          <ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:12px;line-height:1.6;"><li style="margin-bottom:5px;">This is the entry point when you DON'T have 100 shares yet — no stock purchase required upfront, just cash held aside.</li><li style="margin-bottom:5px;">You need the full collateral (strike × 100) sitting in the account as cash — that's what "cash-secured" means.</li><li style="margin-bottom:5px;">Two outcomes, both fine: stock stays above your strike → the put expires worthless and you keep 100% of the premium, no shares bought. Stock drops below your strike → you get assigned and buy 100 shares AT your strike, usually below today's price.</li><li style="margin-bottom:5px;">If assigned, you now own the shares — that's exactly when the Covered Calls tab becomes usable on that ticker. Sell calls against the new position going forward ("the wheel").</li><li style="margin-bottom:5px;">Only sell puts on names you'd genuinely be OK owning at that strike — this only makes sense on tickers you already want, not random high-premium names.</li><li style="margin-bottom:5px;">Est. delta is an approximation (Black-Scholes from implied vol, since option data providers don't give real Greeks here) — treat it as a rough "how likely to get assigned" signal, not a precise number.</li></ul>
+        </div>
+      </div>
+
       <div id="sizing" style="margin-bottom:20px;">
         <h2 style="color:#a78bfa;font-size:18px;margin:0 0 4px;">⚖️ Position Sizing Across All Three</h2>
         <p style="color:#475569;font-size:12px;margin:0 0 12px;">How the strategies fit together as one account, not three separate bets</p>
@@ -112,6 +121,9 @@
                 (Weekly + Monthly + LEAPS combined) should stay under ~10–15% of your account at any time.</li>
             <li>Covered calls don't need new capital — they're income against shares you already hold, so they
                 don't compete with long-call sizing at all. Treat them as a separate, parallel income stream.</li>
+            <li>Cash-secured puts DO need capital — the full collateral (strike × 100) has to sit in cash until
+                the put expires or gets assigned. Don't stack more CSP collateral than you'd actually be OK
+                deploying if every single one gets assigned at once.</li>
             <li>Signal strength should gate size everywhere: a Strong BUY with 2+ confirming factors supports
                 a full-size stock entry AND is the best candidate for a long call. A Moderate BUY with only 1
                 factor is watchlist-only for stock, and skip it entirely for a long call.</li>
