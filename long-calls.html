@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="refresh" content="300">
-  <title>Long Call Opportunities — 2hrs Before Close</title>
+  <title>Long Call Opportunities — 30min Before Close</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,7 +39,7 @@
   <div id="topbar-left">
     <span>📊</span>
     <span id="topbar-title">Long Call Opportunities</span>
-    <span id="topbar-ts">2hrs Before Close · 2026-09-28 14:00 ET</span>
+    <span id="topbar-ts">30min Before Close · 2026-09-28 15:30 ET</span>
   </div>
   <div id="topbar-right">
     <a href="index.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">📊 Main Dashboard →</a><a href="signals.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">📈 Portfolio Signals →</a><a href="covered-calls.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">🎯 Covered Calls →</a><a href="cash-secured-puts.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">🪙 Cash-Secured Puts →</a><a href="strategy-guide.html" style="color:#38bdf8;text-decoration:none;font-size:12px;font-weight:600;border:1px solid #1e3a5f;padding:4px 10px;border-radius:6px;white-space:nowrap;">📚 Strategy Guide →</a>
@@ -54,7 +54,7 @@
       <h1 style="color:#f97316;font-size:22px;margin:8px 0 4px;">🎰 Long Call Opportunities</h1>
       <p style="color:#64748b;font-size:12px;margin:0 0 20px;">
         Portfolio + Nasdaq-100 + S&amp;P-500 · Score ≥ 20 · 1–25% OTM · IV capped 80% · Max ~$500/contract
-        · Filtered to live BUY-signal matches only · Updated 2026-09-28 14:00 ET
+        · Filtered to live BUY-signal matches only · Updated 2026-09-28 15:30 ET
       </p>
 
       <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px;">
@@ -64,19 +64,19 @@
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:10px;padding:12px 18px;">
           <div style="color:#64748b;font-size:11px;">Total scanned (score ≥ 20)</div>
-          <div style="color:#f8fafc;font-size:20px;font-weight:800;">129</div>
+          <div style="color:#f8fafc;font-size:20px;font-weight:800;">128</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:10px;padding:12px 18px;">
           <div style="color:#64748b;font-size:11px;">Avg cost/contract shown</div>
-          <div style="color:#f97316;font-size:20px;font-weight:800;">$505</div>
+          <div style="color:#f97316;font-size:20px;font-weight:800;">$509</div>
         </div>
       </div>
 
       <div style="background:#1c1207;border:1px solid #78350f;border-radius:10px;padding:12px 16px;margin-bottom:14px;font-size:12px;color:#fbbf24;">
         Only tickers currently at BUY in this run's signal scan are shown below — the option setup
         and the technical signal agree, which is the highest-conviction combo and the safest place to
-        start "right away." 46 other candidate(s) passed the options filter alone
-        (liquidity, affordability, upside, IV) with no signal confirmation, and 40 more
+        start "right away." 54 other candidate(s) passed the options filter alone
+        (liquidity, affordability, upside, IV) with no signal confirmation, and 31 more
         had a live BUY signal but were excluded because their cost exceeds the modeled max profit at a
         +20% rally — they can't profit even in the tool's best case. None of these are shown below.
       </div>
@@ -93,7 +93,7 @@
         <div style="margin-bottom:36px;">
           <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:4px;flex-wrap:wrap;">
             <h2 style="color:#f97316;font-size:18px;margin:0;">Weekly</h2>
-            <span style="color:#475569;font-size:12px;">7–14 days to expiry · 19 candidate(s)</span>
+            <span style="color:#475569;font-size:12px;">7–14 days to expiry · 18 candidate(s)</span>
           </div>
           <div style="background:#0b1220;border:1px solid #1e293b;border-radius:10px;padding:12px 16px;margin-bottom:14px;">
             <div style="color:#94a3b8;font-size:11px;font-weight:700;margin-bottom:6px;">HOW TO PLAY WEEKLY</div>
@@ -102,51 +102,19 @@
           <div style="display:flex;flex-wrap:wrap;gap:12px;">
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-            <div style="font-size:16px;font-weight:800;color:#f8fafc;">PM</div>
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">IRM</div>
             <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
           </div>
-          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $200.0</div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $115.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$85</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$200.85</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+4.4%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,996</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">24.9%</div>
-            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">179</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$97</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$115.97</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+4.6%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$1,705</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">33.4%</div>
+            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">1,038</div>
           </div>
-          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 41</div>
-        </div>
-        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-            <div style="font-size:16px;font-weight:800;color:#f8fafc;">NDAQ</div>
-            <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
-          </div>
-          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $97.0</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$53</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$97.53</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+4.9%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$1,407</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">29.0%</div>
-            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">177</div>
-          </div>
-          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 41</div>
-        </div>
-        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-            <div style="font-size:16px;font-weight:800;color:#f8fafc;">GOOGL</div>
-            <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
-          </div>
-          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-05 · 7d · strike $360.0</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$89</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$360.89</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+5.3%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$5,022</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">28.9%</div>
-            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">437</div>
-          </div>
-          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 45</div>
+          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 39</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -157,12 +125,28 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
             <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$163</div>
             <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$441.63</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+5.9%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$5,881</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">29.5%</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+5.4%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$6,099</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">27.5%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">52</div>
           </div>
-          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 36</div>
+          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 37</div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">GOOGL</div>
+            <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-05 · 7d · strike $360.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$83</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$360.83</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+5.5%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$4,967</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">29.3%</div>
+            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">437</div>
+          </div>
+          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 45</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -171,14 +155,14 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $180.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$43</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$180.43</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+6.6%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,266</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">30.0%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$34</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$180.34</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+6.5%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,292</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">27.0%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">134</div>
           </div>
-          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 41</div>
+          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 42</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -189,28 +173,12 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
             <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$15</div>
             <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$37.15</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+8.2%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$407</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">39.6%</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+8.5%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$394</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">40.2%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">279</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 40</div>
-        </div>
-        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-            <div style="font-size:16px;font-weight:800;color:#f8fafc;">NVDA</div>
-            <div style="font-size:10px;color:#f97316;white-space:nowrap;">S&P-500</div>
-          </div>
-          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $250.0</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$42</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$250.42</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+8.8%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,576</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">31.2%</div>
-            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">15,344</div>
-          </div>
-          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 48</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -219,14 +187,30 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $205.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$200</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$207.0</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+9.2%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,052</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">51.4%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$245</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$207.45</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+8.9%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,120</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">53.7%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">80</div>
           </div>
-          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 30</div>
+          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 28</div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">NVDA</div>
+            <div style="font-size:10px;color:#f97316;white-space:nowrap;">S&P-500</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $250.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$39</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$250.39</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+9.2%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,466</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">31.6%</div>
+            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">15,344</div>
+          </div>
+          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 48</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -237,9 +221,9 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
             <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$40</div>
             <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$250.4</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+9.2%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,471</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">37.6%</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+9.6%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,369</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">38.8%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">85</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 39</div>
@@ -253,28 +237,12 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
             <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$43</div>
             <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$350.43</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+9.9%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$3,224</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">35.1%</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+10.4%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$3,029</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">36.3%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">98</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 39</div>
-        </div>
-        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-            <div style="font-size:16px;font-weight:800;color:#f8fafc;">CAT</div>
-            <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
-          </div>
-          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $910.0</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$194</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$911.94</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+10.8%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$7,590</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">42.5%</div>
-            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">107</div>
-          </div>
-          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 32</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -287,10 +255,26 @@
             <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$60.27</div>
             <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+11.1%</div>
             <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$484</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">47.9%</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">47.3%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">1,592</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 38</div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">CAT</div>
+            <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $910.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$158</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$911.58</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+11.4%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$7,043</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">40.3%</div>
+            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">107</div>
+          </div>
+          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 33</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -301,9 +285,9 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
             <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$31</div>
             <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$380.31</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+12.0%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,715</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">34.7%</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+12.3%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,620</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">35.3%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">1,374</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 40</div>
@@ -315,11 +299,11 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $230.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$73</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$230.73</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+12.2%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$1,611</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">47.6%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$64</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$230.64</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+12.6%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$1,528</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">47.7%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">153</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 35</div>
@@ -331,11 +315,11 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $70.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$69</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$70.69</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+12.9%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$445</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">64.3%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$68</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$70.68</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+13.2%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$422</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">64.6%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">463</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 32</div>
@@ -347,28 +331,28 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $1100.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$145</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$1101.45</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+15.1%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$4,724</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">46.5%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$123</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$1101.23</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+16.0%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$3,815</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">47.5%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">50</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 32</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-            <div style="font-size:16px;font-weight:800;color:#f8fafc;">PANW</div>
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">UAL</div>
             <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
           </div>
-          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $460.0</div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $130.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$74</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$460.74</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+18.0%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$787</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">53.1%</div>
-            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">175</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$50</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$130.5</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+16.5%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$395</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">59.3%</div>
+            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">138</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 33</div>
         </div>
@@ -379,14 +363,14 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $180.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$42</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$180.42</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+18.8%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$182</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">58.9%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$41</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$180.41</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+18.6%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$221</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">58.0%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">1,153</div>
           </div>
-          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 33</div>
+          <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 34</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -395,11 +379,11 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-09 · 11d · strike $375.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$63</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$375.63</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+19.4%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$201</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">57.0%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$65</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$375.65</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+19.1%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$301</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">56.6%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">333</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#f97316;font-weight:700;">Score 32</div>
@@ -420,14 +404,14 @@
             <div style="font-size:16px;font-weight:800;color:#f8fafc;">PH</div>
             <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
           </div>
-          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $990.0</div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $980.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$3785</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$1027.85</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+5.6%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$14,035</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">32.4%</div>
-            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">117</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$4335</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$1023.35</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+5.5%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$14,025</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">34.8%</div>
+            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">106</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 22</div>
         </div>
@@ -438,14 +422,30 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $160.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$505</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$165.05</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+6.4%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,113</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">31.8%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$515</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$165.15</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+6.0%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,187</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">31.3%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">133</div>
           </div>
-          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 22</div>
+          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 23</div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">HRL</div>
+            <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $21.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$25</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$21.25</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+6.6%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$267</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">22.8%</div>
+            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">88</div>
+          </div>
+          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 43</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -454,14 +454,14 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $300.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$440</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$304.4</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$460</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$304.6</div>
             <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+8.6%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$3,196</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">26.9%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$3,192</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">27.7%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">98</div>
           </div>
-          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 25</div>
+          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 24</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -470,11 +470,11 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $240.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$925</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$249.25</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+8.7%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,586</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">39.8%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$880</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$248.8</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+8.9%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,529</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">39.4%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">62</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 20</div>
@@ -486,11 +486,11 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $370.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$910</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$379.1</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+10.6%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$3,234</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">36.3%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$893</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$378.93</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+10.8%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$3,165</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">36.5%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">37,625</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 47</div>
@@ -504,9 +504,9 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
             <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$110</div>
             <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$96.1</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+11.7%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$714</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">34.3%</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+12.0%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$684</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">34.8%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">806</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 37</div>
@@ -518,14 +518,14 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $50.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$130</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$51.3</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+12.9%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$322</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">43.5%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$115</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$51.15</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+13.0%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$315</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">41.7%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">304</div>
           </div>
-          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 34</div>
+          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 35</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -534,46 +534,14 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $310.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$78</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$310.78</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+13.6%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$1,760</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">24.1%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$80</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$310.8</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+13.4%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$1,816</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">23.7%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">246</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 39</div>
-        </div>
-        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-            <div style="font-size:16px;font-weight:800;color:#f8fafc;">AMGN</div>
-            <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
-          </div>
-          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-30 · 32d · strike $475.0</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$141</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$476.41</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+14.2%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,403</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">34.0%</div>
-            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">143</div>
-          </div>
-          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 35</div>
-        </div>
-        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-            <div style="font-size:16px;font-weight:800;color:#f8fafc;">FAST</div>
-            <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
-          </div>
-          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $57.5</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$38</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$57.88</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+14.3%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$286</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">30.6%</div>
-            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">1,768</div>
-          </div>
-          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 40</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -582,14 +550,14 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $200.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$302</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$203.02</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+14.9%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$898</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">39.4%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$295</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$202.95</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+14.8%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$927</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">38.9%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">149</div>
           </div>
-          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 27</div>
+          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 28</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -600,9 +568,9 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
             <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$45</div>
             <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$110.45</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+15.6%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$420</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">32.1%</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+15.5%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$427</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">31.9%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">174</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 39</div>
@@ -614,11 +582,11 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $125.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$55</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$125.55</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+17.3%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$285</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">32.0%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$57</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$125.57</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+17.2%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$300</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">31.9%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">148</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 38</div>
@@ -632,28 +600,12 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
             <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$30</div>
             <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$240.3</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+17.4%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$540</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">25.2%</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+17.7%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$464</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">25.5%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">67</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 40</div>
-        </div>
-        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-            <div style="font-size:16px;font-weight:800;color:#f8fafc;">ANET</div>
-            <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
-          </div>
-          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-30 · 32d · strike $240.0</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$227</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$242.27</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+17.8%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$457</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">49.3%</div>
-            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">179</div>
-          </div>
-          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 28</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -664,12 +616,28 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
             <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$345</div>
             <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$273.45</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+18.0%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$473</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">43.1%</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+17.9%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$489</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">43.0%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">59</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 24</div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">ANET</div>
+            <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-10-30 · 32d · strike $240.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$223</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$242.23</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+18.2%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$369</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">50.2%</div>
+            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">179</div>
+          </div>
+          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 27</div>
         </div>
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -678,20 +646,36 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $40.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$55</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$40.55</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+18.1%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$67</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">43.2%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$48</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$40.48</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+18.2%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$61</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">42.2%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">761</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 36</div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">AMGN</div>
+            <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2026-11-20 · 53d · strike $500.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$117</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$501.17</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+19.6%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$145</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">30.4%</div>
+            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">347</div>
+          </div>
+          <div style="margin-top:10px;font-size:10px;color:#22d3ee;font-weight:700;">Score 35</div>
         </div></div>
         </div>
         <div style="margin-bottom:36px;">
           <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:4px;flex-wrap:wrap;">
             <h2 style="color:#a78bfa;font-size:18px;margin:0;">LEAPS</h2>
-            <span style="color:#475569;font-size:12px;">90–180 days to expiry · 7 candidate(s)</span>
+            <span style="color:#475569;font-size:12px;">90–180 days to expiry · 8 candidate(s)</span>
           </div>
           <div style="background:#0b1220;border:1px solid #1e293b;border-radius:10px;padding:12px 16px;margin-bottom:14px;">
             <div style="color:#94a3b8;font-size:11px;font-weight:700;margin-bottom:6px;">HOW TO PLAY LEAPS</div>
@@ -700,15 +684,31 @@
           <div style="display:flex;flex-wrap:wrap;gap:12px;">
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-size:16px;font-weight:800;color:#f8fafc;">HRL</div>
+            <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
+          </div>
+          <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2027-01-15 · 109d · strike $21.0</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$62</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$21.62</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+8.5%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$230</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">25.9%</div>
+            <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">204</div>
+          </div>
+          <div style="margin-top:10px;font-size:10px;color:#a78bfa;font-weight:700;">Score 41</div>
+        </div>
+        <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
             <div style="font-size:16px;font-weight:800;color:#f8fafc;">GOOGL</div>
             <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2027-01-15 · 109d · strike $350.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$2330</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$373.3</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$2285</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$372.85</div>
             <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+9.0%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$3,781</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$3,765</div>
             <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">35.6%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">25,303</div>
           </div>
@@ -721,10 +721,10 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2027-02-19 · 144d · strike $1000.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$6195</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$1061.95</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+9.1%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$10,625</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$6100</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$1061.0</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+9.4%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$10,260</div>
             <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">32.1%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">75</div>
           </div>
@@ -739,9 +739,9 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
             <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$895</div>
             <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$258.95</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+9.9%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,379</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">31.1%</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#4ade80;font-weight:800;">+9.7%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,426</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">30.8%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">317</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#a78bfa;font-weight:700;">Score 22</div>
@@ -749,15 +749,15 @@
         <div style="background:#111827;border:1px solid #1e293b;border-radius:12px;padding:14px 16px;min-width:240px;flex:1 1 240px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
             <div style="font-size:16px;font-weight:800;color:#f8fafc;">NVDA</div>
-            <div style="font-size:10px;color:#f97316;white-space:nowrap;">S&P-500</div>
+            <div style="font-size:10px;color:#4ade80;white-space:nowrap;">Portfolio</div>
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2027-01-15 · 109d · strike $250.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$1115</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$261.15</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+13.5%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$1,503</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">37.4%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$1098</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$260.98</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+13.8%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$1,420</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">37.7%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">64,757</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#a78bfa;font-weight:700;">Score 48</div>
@@ -769,11 +769,11 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2027-01-15 · 109d · strike $350.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$1225</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$362.25</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+13.6%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$2,042</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">34.6%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$1160</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$361.6</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+14.0%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$1,912</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">33.9%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">3,901</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#a78bfa;font-weight:700;">Score 22</div>
@@ -785,11 +785,11 @@
           </div>
           <div style="font-size:11px;color:#64748b;margin-bottom:10px;">2027-01-15 · 109d · strike $110.0</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
-            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$165</div>
-            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$111.65</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+16.1%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$373</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">31.6%</div>
+            <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$168</div>
+            <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$111.68</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+16.0%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$388</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">31.4%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">1,025</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#a78bfa;font-weight:700;">Score 34</div>
@@ -803,9 +803,9 @@
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px;">
             <div style="color:#94a3b8;">Cost/contract</div><div style="color:#f97316;font-weight:700;">$160</div>
             <div style="color:#94a3b8;">Breakeven</div><div style="color:#f8fafc;">$321.6</div>
-            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+17.5%</div>
-            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$678</div>
-            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">24.5%</div>
+            <div style="color:#94a3b8;font-weight:700;">Need to move</div><div style="color:#fbbf24;font-weight:800;">+17.3%</div>
+            <div style="color:#64748b;">Max profit@+15%</div><div style="color:#94a3b8;">$736</div>
+            <div style="color:#94a3b8;">IV</div><div style="color:#e2e8f0;">24.2%</div>
             <div style="color:#94a3b8;">OI</div><div style="color:#e2e8f0;">98</div>
           </div>
           <div style="margin-top:10px;font-size:10px;color:#a78bfa;font-weight:700;">Score 35</div>
